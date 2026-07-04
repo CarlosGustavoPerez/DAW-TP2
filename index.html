@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Rick & Morty</h1>
+
+    <section class="acciones">
+        <p id="instrucciones">
+            Presioná "Obtener Personajes" para cargar datos o utilizá los filtros para realizar una búsqueda específica.
+        </p>
+
+        <button id="btnPersonajes">
+            Obtener personajes
+        </button>
+
+        <h2>Filtros</h2>
+
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="text" id="status" placeholder="Estado (alive, dead, unknown)">
+        <input type="text" id="species" placeholder="Especie">
+        <input type="text" id="type" placeholder="Tipo">
+        <input type="text" id="gender" placeholder="Género">
+
+        <button id="btnBuscar">
+            Buscar con filtros
+        </button>
+    </section>
+    <div id="spinnerContainer" class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <div id="mensaje"></div>
+    <h3 id="contador"></h3>
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Estado</th>
+                <th>Especie</th>
+                <th>Género</th>
+            </tr>
+        </thead>
+        <tbody id="resultado"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>Datos obtenidos desde Rick and Morty API</p>
+    <p>Realizado por Pérez Carlos Gustavo</p>
+</footer>
+</html>
